@@ -13,6 +13,7 @@
 			# General Aliases
       ll = "ls -la";
 			c = "clear";
+			cat = "bat";
 
 			# Basic git shortcuts
     	gs = "git status";

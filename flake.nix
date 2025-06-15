@@ -35,6 +35,7 @@
 				vscode
 				zoxide
 				fzf
+				bat
 
 				# Browsers
 				google-chrome
