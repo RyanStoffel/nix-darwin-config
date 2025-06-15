@@ -36,6 +36,7 @@
 				fzf
 				bat
 				starship
+				tree
 
 				# Browsers
 				google-chrome
