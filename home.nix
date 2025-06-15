@@ -2,85 +2,89 @@
 {
   home.username = "rstoffel";
   home.homeDirectory = "/Users/rstoffel";
-	programs.zoxide = {
-  	enable = true;
-  	enableZshIntegration = false;
-	};
 
-	programs.starship = {
-		enable = true;
-		settings = {
-			# Get editor completions based on the config schema
-			"$schema" = 'https://starship.rs/config-schema.json'
+  programs.zoxide = {
+    enable = true;
+    enableZshIntegration = false;
+  };
 
-			# Inserts a blank line between shell prompts
-			add_newline = true
+  programs.starship = {
+    enable = true;
+    settings = {
+      # Get editor completions based on the config schema
+      "$schema" = "https://starship.rs/config-schema.json";
 
-			# Replace the '❯' symbol in the prompt with '➜'
-			[character] # The name of the module we are configuring is 'character'
-			success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+      # Inserts a blank line between shell prompts
+      add_newline = true;
 
-			# Disable the package module, hiding it from the prompt completely
-			[package]
-			disabled = true
-		};
-	};
+      # Replace the '❯' symbol in the prompt with '➜'
+      character = { # The name of the module we are configuring is 'character'
+        success_symbol = "[➜](bold green)"; # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+      };
+
+      # Disable the package module, hiding it from the prompt completely
+      package = {
+        disabled = true;
+      };
+    };
+  };
 
   programs.zsh = {
     enable = true;
     shellAliases = {
-			# General Aliases
+      # General Aliases
       ll = "ls -la";
-			c = "clear";
-			cat = "bat";
+      c = "clear";
+      cat = "bat";
 
-			# Basic git shortcuts
-    	gs = "git status";
-    	ga = "git add";
-    	gaa = "git add --all";
-    	gc = "git commit -m";
-    	gco = "git checkout";
-    	gb = "git branch";
-    	gd = "git diff";
-    	gl = "git log --oneline --graph --decorate";
+      # Basic git shortcuts
+      gs = "git status";
+      ga = "git add";
+      gaa = "git add --all";
+      gc = "git commit -m";
+      gco = "git checkout";
+      gb = "git branch";
+      gd = "git diff";
+      gl = "git log --oneline --graph --decorate";
 
-    	# Push/Pull shortcuts
-    	gp = "git push";
-    	gpl = "git pull";
-    	gpum = "git push -u origin main";
-    	gpom = "git push origin main";
-    	gplom = "git pull origin main";
+      # Push/Pull shortcuts
+      gp = "git push";
+      gpl = "git pull";
+      gpum = "git push -u origin main";
+      gpom = "git push origin main";
+      gplom = "git pull origin main";
 
-    	# Branch management
-    	gcb = "git checkout -b";
-    	gcom = "git checkout main";
-    	gbr = "git branch -r";
-    	gbd = "git branch -d";
+      # Branch management
+      gcb = "git checkout -b";
+      gcom = "git checkout main";
+      gbr = "git branch -r";
+      gbd = "git branch -d";
 
-    	# Stash shortcuts
-    	gst = "git stash";
-    	gstp = "git stash pop";
-    	gstl = "git stash list";
+      # Stash shortcuts
+      gst = "git stash";
+      gstp = "git stash pop";
+      gstl = "git stash list";
 
-    	# Reset shortcuts
-    	grh = "git reset --hard";
-    	grs = "git reset --soft";
-    	gru = "git reset HEAD~1";
+      # Reset shortcuts
+      grh = "git reset --hard";
+      grs = "git reset --soft";
+      gru = "git reset HEAD~1";
 
-    	# Remote shortcuts
-    	gf = "git fetch";
-    	gfa = "git fetch --all";
-    	gr = "git remote -v";
+      # Remote shortcuts
+      gf = "git fetch";
+      gfa = "git fetch --all";
+      gr = "git remote -v";
 
-    	# Quick commit and push
-    	gac = "git add --all && git commit -m";
+      # Quick commit and push
+      gac = "git add --all && git commit -m";
 
-			# Nix Aliases
-			rebuild = "sudo darwin-rebuild switch --flake ~/nix-darwin-config";
+      # Nix Aliases
+      rebuild = "sudo darwin-rebuild switch --flake ~/nix-darwin-config";
     };
+
     initContent = ''
-			eval "$(starship init zsh)"
-    	eval "$(zoxide init --cmd cd zsh)"
+      eval "$(starship init zsh)"
+      eval "$(zoxide init --cmd cd zsh)"
     '';
 
     plugins = [
@@ -104,6 +108,7 @@
       }
     ];
   };
+
   fonts.fontconfig.enable = true;
   home.stateVersion = "23.11";
 }
