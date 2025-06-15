@@ -30,12 +30,12 @@
         htop
 				code-cursor
 				eslint
-				zsh-powerlevel10k
 				kitty
 				vscode
 				zoxide
 				fzf
 				bat
+				starship
 
 				# Browsers
 				google-chrome
@@ -65,9 +65,6 @@
         enable = true;
         enableCompletion = true;
         enableBashCompletion = true;
-				promptInit = ''
-          source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
-        '';
       };
 
       system.configurationRevision = self.rev or self.dirtyRev or null;
@@ -154,7 +151,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-
+					home-manager.backupFileExtension = "backup";
           home-manager.users.rstoffel = import ./home.nix;
         }
       ];

@@ -7,6 +7,10 @@
   	enableZshIntegration = false;
 	};
 
+	programs.starship = {
+		enable = true;
+	};
+
   programs.zsh = {
     enable = true;
     shellAliases = {
@@ -28,15 +32,15 @@
     	# Push/Pull shortcuts
     	gp = "git push";
     	gpl = "git pull";
-    	gpum = "git push -u origin main";      # Push and set upstream to main
-    	gpom = "git push origin main";         # Push to main
-    	gplom = "git pull origin main";        # Pull from main
+    	gpum = "git push -u origin main";
+    	gpom = "git push origin main";
+    	gplom = "git pull origin main";
 
     	# Branch management
-    	gcb = "git checkout -b";               # Create and checkout new branch
-    	gcom = "git checkout main";            # Switch to main
-    	gbr = "git branch -r";                 # List remote branches
-    	gbd = "git branch -d";                 # Delete branch
+    	gcb = "git checkout -b";
+    	gcom = "git checkout main";
+    	gbr = "git branch -r";
+    	gbd = "git branch -d";
 
     	# Stash shortcuts
     	gst = "git stash";
@@ -46,7 +50,7 @@
     	# Reset shortcuts
     	grh = "git reset --hard";
     	grs = "git reset --soft";
-    	gru = "git reset HEAD~1";              # Undo last commit
+    	gru = "git reset HEAD~1";
 
     	# Remote shortcuts
     	gf = "git fetch";
@@ -54,26 +58,14 @@
     	gr = "git remote -v";
 
     	# Quick commit and push
-    	gacp = "git add --all && git commit -m";  # Add all and commit (needs message)
+    	gac = "git add --all && git commit -m";
 
 			# Nix Aliases
 			rebuild = "sudo darwin-rebuild switch --flake ~/nix-darwin-config";
     };
     initContent = ''
-      # Enable Powerlevel10k instant prompt
-      if [[ -r "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh" ]]; then
-        source "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh"
-      fi
-
-      # Load powerlevel10k from Homebrew
-      if [[ -f "/opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme" ]]; then
-        source "/opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme"
-      fi
-
-      # Load p10k configuration
-      [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-			eval "$(zoxide init --cmd cd zsh)"
+			eval "$(starship init zsh)"
+    	eval "$(zoxide init --cmd cd zsh)"
     '';
 
     plugins = [
