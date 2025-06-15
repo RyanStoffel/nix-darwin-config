@@ -85,6 +85,7 @@
         casks = [
           "microsoft-office"
 					"raycast"
+					"vlc"
         ];
       };
 
