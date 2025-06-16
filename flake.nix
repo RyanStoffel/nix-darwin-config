@@ -47,8 +47,8 @@
 				spotify
 
 				# Productivity
-				teams
 				_1password-gui
+				slack
       ];
 
       system.primaryUser = "rstoffel";
