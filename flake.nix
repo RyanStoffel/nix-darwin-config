@@ -37,6 +37,7 @@
 				bat
 				starship
 				tree
+				gitbutler
 
 				# Browsers
 				google-chrome
