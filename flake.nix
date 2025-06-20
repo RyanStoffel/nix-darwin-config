@@ -88,6 +88,7 @@
           "microsoft-office"
 					"raycast"
 					"vlc"
+					"sublime-merge"
         ];
       };
 
