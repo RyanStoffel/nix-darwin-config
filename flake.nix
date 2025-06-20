@@ -37,6 +37,7 @@
 				bat
 				starship
 				tree
+				gitkraken
 
 				# Browsers
 				google-chrome
@@ -88,7 +89,6 @@
           "microsoft-office"
 					"raycast"
 					"vlc"
-					"sublime-merge"
         ];
       };
 
