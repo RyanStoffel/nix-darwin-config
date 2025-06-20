@@ -37,7 +37,6 @@
 				bat
 				starship
 				tree
-				gitbutler
 
 				# Browsers
 				google-chrome
@@ -50,6 +49,7 @@
 				# Productivity
 				_1password-gui
 				slack
+				obsidian
       ];
 
       system.primaryUser = "rstoffel";
