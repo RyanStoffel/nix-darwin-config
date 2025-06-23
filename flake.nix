@@ -89,6 +89,7 @@
           "microsoft-office"
 					"raycast"
 					"vlc"
+					"logi-options+"
         ];
       };
 
