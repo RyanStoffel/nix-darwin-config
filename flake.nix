@@ -90,6 +90,7 @@
 					"raycast"
 					"vlc"
 					"logi-options+"
+					"alcove"
         ];
       };
 
