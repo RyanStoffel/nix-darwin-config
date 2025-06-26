@@ -83,6 +83,11 @@
         brews = [
 					"sf"
           "stylua"
+          "clang-format"
+          "google-java-format"
+          "prettier"
+          "shfmt"
+          "black"
         ];
 
         casks = [
