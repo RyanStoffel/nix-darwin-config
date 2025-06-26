@@ -37,7 +37,7 @@
 				starship
 				tree
 				gitkraken
-				code-cursor
+				nerdfonts-jetbrains-mono
 
 				# Browsers
 				google-chrome
