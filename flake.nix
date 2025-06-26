@@ -82,6 +82,7 @@
 
         brews = [
 					"sf"
+          "stylua"
         ];
 
         casks = [
