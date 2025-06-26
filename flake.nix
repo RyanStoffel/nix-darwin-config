@@ -28,7 +28,6 @@
         wget
         curl
         htop
-				code-cursor
 				eslint
 				kitty
 				vscode
@@ -38,6 +37,7 @@
 				starship
 				tree
 				gitkraken
+				code-cursor
 
 				# Browsers
 				google-chrome
