@@ -37,7 +37,6 @@
 				starship
 				tree
 				gitkraken
-				nerdfonts-jetbrains-mono
 
 				# Browsers
 				google-chrome
@@ -90,7 +89,7 @@
 					"raycast"
 					"vlc"
 					"logi-options+"
-					"alcove"
+                    "font-jetbrains-mono-nerd-font"
         ];
       };
 
