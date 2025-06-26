@@ -37,6 +37,7 @@
 				starship
 				tree
 				gitkraken
+        ripgrep
 
 				# Browsers
 				google-chrome
