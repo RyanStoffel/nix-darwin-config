@@ -91,6 +91,7 @@
 					"raycast"
 					"vlc"
           "font-jetbrains-mono-nerd-font"
+          "ghostty"
         ];
       };
 
