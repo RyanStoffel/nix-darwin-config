@@ -51,6 +51,7 @@
 				_1password-gui
 				slack
 				obsidian
+        bitwarden-desktop
       ];
 
       system.primaryUser = "rstoffel";
