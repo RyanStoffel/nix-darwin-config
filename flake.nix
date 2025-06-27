@@ -92,11 +92,10 @@
         ];
 
         casks = [
-          "microsoft-office"
 					"raycast"
 					"vlc"
-					"logi-options+"
-                    "font-jetbrains-mono-nerd-font"
+          "font-jetbrains-mono-nerd-font"
+          "zen"
         ];
       };
 
