@@ -46,7 +46,6 @@
 				# Productivity
 				slack
 				obsidian
-        bitwarden-desktop
       ];
 
       system.primaryUser = "rstoffel";
