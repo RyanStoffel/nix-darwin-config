@@ -37,6 +37,7 @@
 				tree
 				gitkraken
         ripgrep
+        stow
 
 				# Entertainment
 				discord
