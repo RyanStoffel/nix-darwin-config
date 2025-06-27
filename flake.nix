@@ -38,9 +38,6 @@
 				gitkraken
         ripgrep
 
-				# Browsers
-        firefox
-
 				# Entertainment
 				discord
 				spotify
