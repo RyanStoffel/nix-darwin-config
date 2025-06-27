@@ -39,7 +39,7 @@
         ripgrep
 
 				# Browsers
-        brave
+        firefox
 
 				# Entertainment
 				discord
