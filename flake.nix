@@ -28,7 +28,6 @@
         curl
         htop
 				eslint
-				kitty
 				vscode
 				zoxide
 				fzf
@@ -151,7 +150,7 @@
       };
     };
   in {
-    darwinConfigurations."Ryans-MacBook-Pro" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."Apollo" = nix-darwin.lib.darwinSystem {
       modules = [
         configuration
         home-manager.darwinModules.home-manager
