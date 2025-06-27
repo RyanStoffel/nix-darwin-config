@@ -42,6 +42,7 @@
 				# Entertainment
 				discord
 				spotify
+        fastfetch
 
 				# Productivity
 				slack
