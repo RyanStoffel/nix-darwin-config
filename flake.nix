@@ -20,7 +20,6 @@
         neovim
         git
         gh
-        zed-editor
         jdk21
         python313
         python313Packages.pip
@@ -40,15 +39,13 @@
         ripgrep
 
 				# Browsers
-				google-chrome
-				firefox-devedition-unwrapped
+        brave
 
 				# Entertainment
 				discord
 				spotify
 
 				# Productivity
-				_1password-gui
 				slack
 				obsidian
         bitwarden-desktop
@@ -96,7 +93,6 @@
 					"raycast"
 					"vlc"
           "font-jetbrains-mono-nerd-font"
-          "zen"
         ];
       };
 
