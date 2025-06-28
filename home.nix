@@ -74,7 +74,7 @@
       gac = "git add --all && git commit -m";
 
       # Nix Aliases
-      rebuild = "sudo darwin-rebuild switch --flake ~/nix-darwin-config";
+      rebuild = "sudo darwin-rebuild switch --flake ~/nix-darwin-config && nix-collect-garbage -d";
     };
 
     initContent = ''
