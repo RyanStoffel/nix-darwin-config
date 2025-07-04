@@ -11,15 +11,18 @@
   programs.starship = {
     enable = true;
     settings = {
-      # Get editor completions based on the config schema
       "$schema" = "https://starship.rs/config-schema.json";
-
-      # Inserts a blank line between shell prompts
       add_newline = true;
-
-      # Disable the package module, hiding it from the prompt completely
-      package = {
-        disabled = true;
+    
+      package.disabled = true;
+    
+      # Add explicit git_status configuration
+      git_status = {
+        format = "([\$all_status\$ahead_behind](\$style) )";
+        modified = "!";
+        untracked = "?";
+        # This might help with the false positive
+        ignore_submodules = true;
       };
     };
   };
