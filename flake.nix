@@ -91,7 +91,6 @@
 					"vlc"
           "font-jetbrains-mono-nerd-font"
           "ghostty"
-          "orion"
         ];
       };
 
