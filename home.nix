@@ -16,13 +16,6 @@
     
       package.disabled = true;
     
-      # Add explicit git_status configuration
-      git_status = {
-        format = "([\$all_status\$ahead_behind](\$style) )";
-        modified = "!";
-        untracked = "?";
-        # This might help with the false positive
-        ignore_submodules = true;
       };
     };
   };
