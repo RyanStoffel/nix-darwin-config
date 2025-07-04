@@ -15,8 +15,6 @@
       add_newline = true;
     
       package.disabled = true;
-    
-      };
     };
   };
 
