@@ -11,16 +11,10 @@
   programs.starship = {
     enable = true;
     settings = {
-      # Get editor completions based on the config schema
       "$schema" = "https://starship.rs/config-schema.json";
-
-      # Inserts a blank line between shell prompts
       add_newline = true;
-
-      # Disable the package module, hiding it from the prompt completely
-      package = {
-        disabled = true;
-      };
+    
+      package.disabled = true;
     };
   };
 
@@ -74,12 +68,13 @@
       gac = "git add --all && git commit -m";
 
       # Nix Aliases
-      rebuild = "sudo darwin-rebuild switch --flake ~/nix-darwin-config";
+      rebuild = "sudo darwin-rebuild switch --flake ~/nix-darwin-config && nix-collect-garbage -d";
     };
 
     initContent = ''
       eval "$(starship init zsh)"
       eval "$(zoxide init --cmd cd zsh)"
+      fastfetch
     '';
 
     plugins = [
@@ -107,3 +102,4 @@
   fonts.fontconfig.enable = true;
   home.stateVersion = "23.11";
 }
+

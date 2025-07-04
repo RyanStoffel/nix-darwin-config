@@ -28,7 +28,6 @@
         curl
         htop
 				eslint
-				kitty
 				vscode
 				zoxide
 				fzf
@@ -37,15 +36,16 @@
 				tree
 				gitkraken
         ripgrep
+        stow
 
 				# Entertainment
 				discord
 				spotify
+        fastfetch
 
 				# Productivity
 				slack
 				obsidian
-        bitwarden-desktop
       ];
 
       system.primaryUser = "rstoffel";
@@ -90,6 +90,7 @@
 					"raycast"
 					"vlc"
           "font-jetbrains-mono-nerd-font"
+          "ghostty"
         ];
       };
 
@@ -149,7 +150,7 @@
       };
     };
   in {
-    darwinConfigurations."Ryans-MacBook-Pro" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."Apollo" = nix-darwin.lib.darwinSystem {
       modules = [
         configuration
         home-manager.darwinModules.home-manager
@@ -163,4 +164,5 @@
     };
   };
 }
+
 
