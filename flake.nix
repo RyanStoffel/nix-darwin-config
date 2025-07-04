@@ -46,6 +46,7 @@
 				# Productivity
 				slack
 				obsidian
+        yabai
       ];
 
       system.primaryUser = "rstoffel";
