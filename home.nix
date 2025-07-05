@@ -102,3 +102,4 @@
   fonts.fontconfig.enable = true;
   home.stateVersion = "23.11";
 }
+

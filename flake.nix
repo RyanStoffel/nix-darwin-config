@@ -102,7 +102,7 @@
           autohide-time-modifier = 0.0;
           show-recents = false;
           launchanim = false;
-          orientation = "bottom";
+          orientation = "left";
           tilesize = 48;
         };
 
@@ -165,4 +165,5 @@
     };
   };
 }
+
 
