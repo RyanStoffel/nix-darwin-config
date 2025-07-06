@@ -75,6 +75,7 @@
       eval "$(starship init zsh)"
       eval "$(zoxide init --cmd cd zsh)"
       fastfetch
+      export PATH="$HOME/.config/emacs/bin:$PATH"
     '';
 
     plugins = [
