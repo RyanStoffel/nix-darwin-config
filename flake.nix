@@ -46,7 +46,6 @@
 				# Productivity
 				slack
 				obsidian
-        libreoffice
       ];
 
       system.primaryUser = "rstoffel";
