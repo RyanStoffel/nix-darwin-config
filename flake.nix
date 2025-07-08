@@ -93,6 +93,7 @@
           "ghostty"
           "zen"
           "emacs"
+          "zed"
         ];
       };
 
