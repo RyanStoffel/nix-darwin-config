@@ -37,6 +37,7 @@
 				gitkraken
         ripgrep
         stow
+        postman
 
 				# Entertainment
 				discord
