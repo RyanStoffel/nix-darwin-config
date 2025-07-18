@@ -20,62 +20,9 @@
 
   programs.zsh = {
     enable = true;
-    shellAliases = {
-      # General Aliases
-      ll = "ls -la";
-      c = "clear";
-      cat = "bat";
-
-      # Basic git shortcuts
-      gs = "git status";
-      ga = "git add";
-      gaa = "git add --all";
-      gc = "git commit -m";
-      gco = "git checkout";
-      gb = "git branch";
-      gd = "git diff";
-      gl = "git log --oneline --graph --decorate";
-
-      # Push/Pull shortcuts
-      gp = "git push";
-      gpl = "git pull";
-      gpum = "git push -u origin main";
-      gpom = "git push origin main";
-      gplom = "git pull origin main";
-
-      # Branch management
-      gcb = "git checkout -b";
-      gcom = "git checkout main";
-      gbr = "git branch -r";
-      gbd = "git branch -d";
-
-      # Stash shortcuts
-      gst = "git stash";
-      gstp = "git stash pop";
-      gstl = "git stash list";
-
-      # Reset shortcuts
-      grh = "git reset --hard";
-      grs = "git reset --soft";
-      gru = "git reset HEAD~1";
-
-      # Remote shortcuts
-      gf = "git fetch";
-      gfa = "git fetch --all";
-      gr = "git remote -v";
-
-      # Quick commit and push
-      gac = "git add --all && git commit -m";
-
-      # Nix Aliases
-      rebuild = "sudo darwin-rebuild switch --flake ~/nix-darwin-config && nix-collect-garbage -d";
-    };
-
+    
     initContent = ''
-      eval "$(starship init zsh)"
-      eval "$(zoxide init --cmd cd zsh)"
-      fastfetch
-      export PATH="$HOME/.config/emacs/bin:$PATH"
+      source "$HOME/.dotfiles/zsh/config.zsh";
     '';
 
     plugins = [
@@ -103,4 +50,3 @@
   fonts.fontconfig.enable = true;
   home.stateVersion = "23.11";
 }
-
