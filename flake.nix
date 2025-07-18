@@ -38,6 +38,7 @@
         ripgrep
         stow
         postman
+        tmux
 
 				# Entertainment
 				discord
