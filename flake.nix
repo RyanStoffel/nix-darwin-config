@@ -47,6 +47,7 @@
 				# Productivity
 				slack
 				obsidian
+        notion-app
       ];
 
       system.primaryUser = "rstoffel";
