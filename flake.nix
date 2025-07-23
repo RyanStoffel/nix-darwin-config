@@ -39,6 +39,7 @@
         stow
         postman
         tmux
+        kitty
 
 				# Entertainment
 				discord
