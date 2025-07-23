@@ -94,6 +94,7 @@
 					"vlc"
           "font-jetbrains-mono-nerd-font"
           "ghostty"
+          "kitty"
           "zen"
           "zed"
         ];
