@@ -30,6 +30,7 @@
         tree
         stow
         sketchybar
+        aerospace
 
         # Development runtimes (system-wide)
         jdk21
