@@ -158,7 +158,7 @@
       downloads = "cd ~/Downloads";
       
       # Nix Darwin management
-      rebuild = "darwin-rebuild switch --flake ~/nix-darwin-config";
+      rebuild = "sudo darwin-rebuild switch --flake ~/nix-darwin-config";
       nix-update = "nix flake update ~/nix-darwin-config";
       nix-clean = "nix-collect-garbage -d";
       
