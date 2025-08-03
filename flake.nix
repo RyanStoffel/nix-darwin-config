@@ -39,6 +39,7 @@
         stow
         postman
         tmux
+        alacritty
 
 				# Entertainment
 				discord
@@ -49,6 +50,7 @@
 				slack
 				obsidian
         notion-app
+        skethybar
       ];
 
       system.primaryUser = "rstoffel";
